@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منظم المهام الدراسي - قائمة المهام</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">منظم المهام الدراسي</div>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="tasks.html">المهام</a></li>
+                <li><a href="add_task.html">إضافة مهمة</a></li>
+                <li><a href="about.html">حول</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle">تبديل الوضع</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h1>قائمة المهام الدراسية</h1>
+            <div id="task-list" class="task-list">
+                <!-- المهام ستظهر هنا عبر JavaScript -->
+                <p id="no-tasks">لا توجد مهام حالياً. قم بإضافة مهمة جديدة!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2026 - مشروع تطوير الويب 1</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // كود خاص بصفحة المهام لعرضها عند التحميل
+        document.addEventListener('DOMContentLoaded', displayTasks);
+    </script>
+</body>
+</html>
